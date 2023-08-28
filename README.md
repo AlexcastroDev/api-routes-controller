@@ -20,4 +20,11 @@ class SomeController {
 }
 ```
 
+The Api handler only will have the instance of the controller, and execute function.
+
+```typescript
+  const Issue = new IssuesController(req, res)
+  return Issue.execute()
+```
+
 Cheers!
